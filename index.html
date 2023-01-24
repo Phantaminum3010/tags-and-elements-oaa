@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Tags Cheat Sheet</title>
 </head>
 <body>
+    <h1 id="top-of-page">HTML Tags Cheat Sheet</h1>
+    <h2>Headings</h2>
+    <p>Headings from `h1` to `h6` are titles of sections or blocks of a page. Every page must have one, and only one, h1 element.</p>
+
+    <h2>Paragraphs</h2>
+    <p>Paragraphs of text go in `p` tags.</p>
+
+    <h2>Lists</h2>
+    <p>There are 2 types of lists commonly used in a html document:</p>
+    <ul>
+        <li>
+            <h3>Unordered lists (`ul`)</h3>
+            <p>Unordered lists are marked with bullet points and go in the `ul` tags. Each list item goes in a `li` tag.</p>
+        </li>
+        <li>
+            <h3>Ordered lists (`ol`)</h3>
+            <p>Ordered lists are marked with numbers and go in the `ol` tags. Each list item goes in a `li` tag.</p>
+        </li>
+    </ul>
+
+    <h3>Examples for lists</h3>
+    <h4>Polya's solving framework (ordered list)</h4>
+    <ol>
+        <li>Understand the problem.</li>
+        <li>Devise a plan.</li>
+        <li>Solve the problem.</li>
+        <li>Go back and improve your solution.</li>
+    </ol>
+
+    <h2>Anchors (i.e. links)</h2>
+    <p>
+        Anchor tags create links to other pages. The URL goes in the `href` attribute.
+        <a href="https://duckduckgo.com">Go to DuckDuckGo to search for more information.</a>
+    </p>
+    <p>
+        Setting `target="_blank"` will open the link in a new window.
+        See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
+        MDN</a> for more details.
+    </p>
+    <p>
+        Anchor tags can also link to other elements within the same page. If we wish to do this, instead of specifying the href attribute's value with the url of some page, we let its value equal to # + the id of the element that we want to move to.
+        For example, <a href="#top-of-page">this link</a> jumps to the h1 element of our page.
+    </p>
+
+    <h2>Text emphasis</h2>
+    <h3>Italic</h3>
+    <p><em>The `em` element adds extra emphasis to the text within the opening and closing tags. This shows up as italic text in most browser.</em></p>
+    <h3>Bold</h3>
+    <p><em>The `strong` element means you want to emphasize the content between the opening and closing tags. This shows up as bold text in most browser.</em></p>
+
+    <h2>Organizing Content with `div` and `span`</h2>
+        <h3>`div`</h3>
+            <p>
+                The `div` element is a block element, so each `div` will show up on a new line.
+            </p>
+            <div>1st div</div>
+            <div>2nd div</div>
+            <div>3rd div</div>
+        <h3>`span`</h3>
+            <p>
+                The `span` element is an inline element, so there will be no line break between each `span`.
+            </p>
+            <span>1st span</span>
+            <span>2nd span</span>
+            <span>3rd span</span>
+
+    <h2>Breaking text using the `br` tag</h2>
+        <p>
+            Replace with Haiku line 1 (5 syllables)<br>
+            Replace with Haiku line 2 (7 syllables)<br>
+            Replace with Haiku line 3 (5 syllables)<br>
+        </p>
+
 
 </body>
 </html>
